@@ -32,6 +32,37 @@
     <link rel="stylesheet" href="../assets/css/Team-Clean.css">
     <link rel="stylesheet" href="../assets/css/Team-Grid.css">
     <link rel="stylesheet" href="../assets/css/Zig-Zag-Timeline-v3.css">
+<style>
+
+.dot {
+font-family: simsun;
+}
+:root .dot { 
+display: inline-block;
+width: 1.5em;
+vertical-align: bottom;
+overflow: hidden;
+}
+@-webkit-keyframes dot {
+0% { width: 0; margin-right: 1.5em; }
+33% { width: .5em; margin-right: 1em; }
+66% { width: 1em; margin-right: .5em; }
+100% { width: 1.5em; margin-right: 0;}
+}
+.dot {
+-webkit-animation: dot 3s infinite step-start;
+}
+
+@keyframes dot {
+0% { width: 0; margin-right: 1.5em; }
+33% { width: .5em; margin-right: 1em; }
+66% { width: 1em; margin-right: .5em; }
+100% { width: 1.5em; margin-right: 0;}
+}
+.dot {
+animation: dot 3s infinite step-start;
+}
+</style>
 </head>
 
 <body>
@@ -50,7 +81,7 @@
     </nav>
     <div class="jumbotron">
         <h1>开发中</h1>
-        <p style="width:161px;color:#a2a8ae;">In development<span>……</span></p>
+        <p style="width:161px;color:#a2a8ae;">In development<span class="dot">...</span></p>
     </div>
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
